@@ -1,6 +1,25 @@
 # Changes
 
 
+## [1.71.0](https://github.com/googleapis/google-cloud-go/compare/storage/v1.70.0...storage/v1.71.0) (2026-10-26)
+
+
+### Features
+
+* **storage:** Add error.type and gcp.errors.domain to operation spans ([#20705](https://github.com/googleapis/google-cloud-go/issues/20705)) ([50cd4a3](https://github.com/googleapis/google-cloud-go/commit/50cd4a3df13ce08b7e30f68893598b76b73de1d1))
+* **storage:** Add gcp.client.retry.attempt_number to gRPC attempt spans ([#20716](https://github.com/googleapis/google-cloud-go/issues/20716)) ([5528a50](https://github.com/googleapis/google-cloud-go/commit/5528a500bbee73f8fdf42cd4c818373f3b39a490))
+* **storage:** Add gcp.storage.upload.id attribute for resumable uploads ([#20687](https://github.com/googleapis/google-cloud-go/issues/20687)) ([1259592](https://github.com/googleapis/google-cloud-go/commit/1259592d377953a55ccf5c70537f13f51877bb90))
+* **storage:** Add gcp.storage.uri trace attribute to object and bucket operation spans ([#20606](https://github.com/googleapis/google-cloud-go/issues/20606)) ([dfdddde](https://github.com/googleapis/google-cloud-go/commit/dfdddde514104daf16e070d65464b9fd5897a7ab))
+* **storage:** Add OpenTelemetry tracing for auth credential refreshes ([#20677](https://github.com/googleapis/google-cloud-go/issues/20677)) ([3ec4bb2](https://github.com/googleapis/google-cloud-go/commit/3ec4bb23854391c97aa8c186c01c9ed7e9dc07ec))
+* **storage:** Add RetryBackoff spans for retry backoffs ([#20715](https://github.com/googleapis/google-cloud-go/issues/20715)) ([edca405](https://github.com/googleapis/google-cloud-go/commit/edca4055ed4dc120a355ff3807653cf9802226e6))
+* **storage:** Add rpc.system.name attribute to trace spans ([#20655](https://github.com/googleapis/google-cloud-go/issues/20655)) ([7d238ad](https://github.com/googleapis/google-cloud-go/commit/7d238ad99d97c0cde92183fa587ef57122b812a6))
+* **storage:** Record read and write mode trace attributes ([#20714](https://github.com/googleapis/google-cloud-go/issues/20714)) ([f41be16](https://github.com/googleapis/google-cloud-go/commit/f41be163730b8fe4d31a05b4e67895823048b576))
+
+
+### Bug Fixes
+
+* **storage:** Prevent spurious cancelled status on completed gRPC reads ([#20409](https://github.com/googleapis/google-cloud-go/issues/20409)) ([4749772](https://github.com/googleapis/google-cloud-go/commit/47497723ad3d4196398fb7e7d7ba4a79c92b53ac))
+
 ## [1.70.0](https://github.com/googleapis/google-cloud-go/compare/storage/v1.69.0...storage/v1.70.0) (2026-10-22)
 
 
